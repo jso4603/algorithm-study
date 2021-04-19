@@ -11,7 +11,7 @@ const rl = readline.createInterface({
 rl.on('line', function (line) {
     const input = line.split(' ');
 
-    const result = Number(input[0]) + Number(input[1]);
+    const result = Number(input[0]) / Number(input[1]);
     console.log(result);
 
     rl.close();
