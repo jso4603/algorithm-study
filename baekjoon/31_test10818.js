@@ -20,19 +20,31 @@ rl.on('line', function (line) {
     const N = Number(input[0]);
     const numbers = input[1].split(' ').map(Number);
 
-    let min = numbers[0];
-    let max = numbers[0];
+    // 1번 ==============================================================
 
-    for (let i = 1; i < N; i++) {
-        if (min > numbers[i]) {
-            min = numbers[i];
-        }
+    numbers.sort((a, b) => a - b);
 
-        if (max < numbers[i]) {
-            max = numbers[i];
-        }
-    }
-    console.log(min, max);
+    console.log(numbers[0], numbers[N - 1]);
+
+    // =================================================================
+
+    // 2번 ==============================================================
+
+    // let min = numbers[0];
+    // let max = numbers[0];
+
+    // for (let i = 1; i < N; i++) {
+    //     if (min > numbers[i]) {
+    //         min = numbers[i];
+    //     }
+
+    //     if (max < numbers[i]) {
+    //         max = numbers[i];
+    //     }
+    // }
+    // console.log(min, max);
+
+    // =================================================================
 
     process.exit();
 });
