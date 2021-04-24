@@ -24,8 +24,8 @@ rl.on('line', function (line) {
         for (let j = 0; j < result.length; j++) {
             // 맞았을 경우
             if (result[j] === 'O') {
-                // 점수 에 1점과 보너스 점수를 더해준다.
-                score = score + 1 + bonus;
+                // 점수 에 1점 과 보너스를 더해준다.
+                score += 1 + bonus;
                 // 보너스 점수가 1점 오른다.
                 bonus++;
             } else {

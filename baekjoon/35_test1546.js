@@ -14,6 +14,9 @@ rl.on('line', function (line) {
     const N = +input[0];
     let numbers = input[1].split(' ').map(Number);
 
+    let array = [1, 2, 3, 4, 5];
+    console.log(...array); // 1 2 3 4 5
+
     // 최고점 = 과목을 내림차순 한 배열의 마지막 요소
     const M = numbers.sort((a, b) => a - b)[N - 1];
 
