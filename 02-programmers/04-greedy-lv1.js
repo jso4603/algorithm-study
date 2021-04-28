@@ -34,7 +34,7 @@ function solution(n, lost, reserve) {
     //     // 잃어 버린 학생이 여분이 있는 학생인지 확인
     //     let key = lost.indexOf(tmp[i]);
 
-    //     // 여분이 없으면 여분이 있는 학생이 잃어버린 학생에게 빌려준다
+    //     // 여분이 있으면 자신이 입음
     //     if (key != -1) {
     //         lost.splice(key, 1);
     //         reserve.splice(reserve.indexOf(tmp[i]), 1);
