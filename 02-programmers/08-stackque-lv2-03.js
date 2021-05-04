@@ -32,14 +32,22 @@ function solution(priorities, location) {
     //     // 대기목록 첫번째 요소 배열 최대값보다 작은 경우
     //     if (priorities[0] < Math.max(...priorities)) {
     //         // 첫번째 요소가 자신일 경우 location을 배열 마지막으로 옮김
-    //         if (--location < 0) location = priorities.length - 1;
+    //         if (location === 0) {
+    //             location = priorities.length - 1;
+    //         } else {
+    //             location--;
+    //         }
     //         // 제일 앞 요소를 뺴서 제일 뒤에 넣는다
     //         priorities.push(priorities.shift());
     //     } else {
     //         // 순위를 업데이트 해줌
     //         ranking++;
     //         // 배열을 빠져나가는 게 자신일 경우 멈추고 순위를 return
-    //         if (--location < 0) return ranking;
+    //         if (location === 0) {
+    //             return ranking;
+    //         } else {
+    //             location--;
+    //         }
     //         // 자신이 아니면 제일 앞의 요소 빼낸다.
     //         priorities.shift();
     //     }

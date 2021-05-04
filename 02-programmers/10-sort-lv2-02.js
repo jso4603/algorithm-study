@@ -17,7 +17,7 @@ function solution(citations) {
     //     }
     // }
 
-    return answers;
+    // return answers;
 }
 
 console.log(solution([47, 42, 32, 28, 24, 22, 17, 15, 10, 10, 8]));
